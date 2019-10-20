@@ -1,0 +1,887 @@
+/* .nav>div{
+    float: left;
+
+} */
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav {
+    padding: .2rem 0;
+    overflow: hidden;
+    /* position: fixed;
+    top: 0; */
+}
+
+.return {
+    float: left;
+    width: .6rem;
+    background: url(../images/musicreturn.png) no-repeat center center;
+    background-size: .5rem .5rem;
+    height: .6rem;
+}
+
+.songName {
+    float: left;
+    width: calc(100% - 1.2rem);
+    text-align: center;
+    line-height: .6rem;
+    font-size: .45rem;
+}
+
+.share {
+    float: right;
+    width: .6rem;
+    background: url(../images/musicshare.png) no-repeat center center;
+    background-size: .5rem .5rem;
+    height: .6rem;
+}
+
+.music-box {
+       /* visibility: hidden; */
+       background: url(../images/songWordBg.png) no-repeat center center;
+       background-size: cover;
+       padding: .2rem .15rem;
+       height: calc(100% - .4rem);
+       /* overflow: auto; */
+       /* background: url(../images/imagewrite.jpg) no-repeat center center; */
+       background-size: cover;
+       width: calc(100% - .3rem);
+       display: none
+}
+
+.songPtc{
+    display: none;
+    height: 5.5rem;
+    /* background: #fff; */
+    border-radius: 50%;
+    margin: .5rem auto;
+    width: 5.5rem;
+    border: 8px solid #fff;
+    animation: z 6s linear 0s infinite paused;
+}
+
+.Lyrics {
+    height: calc(100% - 5.2rem);
+    overflow: hidden;
+    font-size: .48rem;
+    text-align: center;
+    margin: .4rem 0;
+    position: fixed;
+    left: 0;
+    width: 100%;
+
+    /* overflow: hidden;
+    font-size: .48rem;
+    text-align: center;
+    margin: .4rem 0;
+    position: fixed;
+    width: 100%;
+    bottom: 3.2rem;
+    height: 1.5rem;
+    left: 0; */
+}
+
+.Lyrics>div {
+    position: absolute;
+    top: 150px;
+    width: 100%;
+}
+
+.operate-menu {
+    height: 1rem;
+    /* background: red; */
+    position: fixed;
+    width: 100%;
+    bottom: 2.2rem;
+}
+
+.operate-menu>div {
+    float: left;
+    width: 20%;
+    position: relative;
+}
+
+.ope-love {
+    width: .55rem;
+    height: .48rem;
+    background: url(../images/no-love.png) no-repeat center center;
+    background-size: cover;
+    /* margin: auto; */
+    margin: .26rem auto;
+}
+
+.ope-video {
+    width: .5rem;
+    height: .5rem;
+    background: url(../images/video.png) no-repeat center center;
+    background-size: cover;
+    /* margin: auto; */
+    margin: .25rem auto;
+}
+
+.ope-download {
+    width: .6rem;
+    height: .6rem;
+    background: url(../images/ope-down.png) no-repeat center center;
+    background-size: cover;
+    /* margin: auto; */
+    margin: .2rem auto;
+}
+
+.ope-communicate {
+    width: .5rem;
+    height: .5rem;
+    background: url(../images/communicate.png) no-repeat center center;
+    background-size: cover;
+    /* margin: auto; */
+    margin: .25rem auto;
+}
+
+.ope-menu {
+    width: .5rem;
+    height: .5rem;
+    background: url(../images/ope-menu.png) no-repeat center center;
+    background-size: cover;
+    /* margin: auto; */
+    margin: .25rem auto;
+}
+
+.tables {
+    position: fixed;
+    bottom: .2rem;
+    width: calc(100% - .3rem);
+    height: 2rem;
+    /* background: red; */
+}
+
+.rate {
+    height: .4rem;
+    width: 100%;
+}
+
+.rate>div {
+    float: left;
+    width: 1rem;
+    line-height: .4rem;
+    text-align: center;
+}
+/* .currentTime{
+    width: 15%;
+}
+.duration{
+    width: 15%;
+} */
+
+.progress {
+    width: calc(100% - 2rem) !important;
+    height: 1.6px;
+    /* width: 5rem !important; */
+    background: #fff;
+    margin-top: 7.2px;
+    position: relative;
+}
+
+.progress-active {
+    height: 100%;
+    background: blue;
+    position: absolute;
+}
+
+.mask {
+    position: absolute;
+    left: 0;
+    /* background: red; */
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    top: -5px;
+    border: 2px solid blue;
+}
+
+.mask-white {
+    width: 6px;
+    height: 6px;
+    background: #fff;
+    border-radius: 50%;
+    border: 1px solid #fff;
+}
+
+.layer {
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    top: 0;
+}
+
+.foot {
+    overflow: hidden;
+    /* padding-top: 1.2rem; */
+    /* padding: 1.2rem 0; */
+}
+
+.foot>div {
+    float: left;
+    width: 20%;
+    height: 1rem;
+    margin-top: .2rem;
+    background-size: .5rem .5rem;
+}
+
+.love {
+    background: url(../images/no-love.png) no-repeat center center;
+    /* background-size:  */
+}
+
+.before {
+    background: url(../images/previous.png) no-repeat center center;
+    background-size: .4rem .4rem;
+}
+
+.after {
+    background: url(../images/next.png) no-repeat center center;
+    background-size: .4rem .4rem;
+}
+
+.before, .after {
+    /* background: url(../images/play.png) no-repeat 0 0; */
+    width: .4rem;
+    height: .4rem;
+    position: relative;
+    top: -.7rem;
+    /* left: .5rem; */
+    margin: auto;
+}
+
+.startTOP {
+    background: url(../images/play-song.png) no-repeat 0 0;
+    background-size: .6rem .6rem;
+    width: .6rem;
+    height: .6rem;
+    position: relative;
+    top: -.8rem;
+    left: .05rem;
+    margin: 0 auto;
+}
+
+.menu {
+    background: url(../images/1.png) no-repeat center center;
+    /* background-size:  */
+}
+
+.circle {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background: #22A5F1;
+    /* text-align: center; */
+    margin: 0 auto;
+}
+
+.home {
+    /* display: none; */
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow-y: auto;
+    height: calc(100% - 1.2rem);
+}
+
+.bg-top {
+    height: 2.2rem;
+    background: #0078D7;
+    /* padding-top: .3rem; */
+    padding: .3rem .3rem 0;
+}
+
+.bg-content {
+    position: relative;
+    /* z-index: 5; */
+    top: -.05rem;
+    background: #fff;
+    border-radius: .05rem;
+}
+
+.nav-top {
+    position: relative;
+    width: calc(100% - .4rem);
+    margin: 0 auto;
+}
+
+.nav-top>div {
+    float: left;
+}
+
+.nav-menu {
+    width: 32px;
+    height: 32px;
+    background: url(../images/nav-menu.png) no-repeat center center;
+    background-size: 24px 24px
+}
+
+.nav-list {
+    padding: 0 .5rem;
+    line-height: 32px;
+    width: calc(100% - 64px - 1rem);
+    font-size: .46rem;
+}
+
+.nav-add {
+    width: .46rem;
+    height: .46rem;
+    background: url(../images/nav-add.png) no-repeat center center;
+    background-size: cover;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+}
+
+.nav-list>div {
+    float: left;
+    width: 25%;
+    text-align: center;
+    color: #8CE5FF
+}
+
+.nav-list>div.active {
+    font-size: .65rem;
+    color: #fff;
+}
+
+.nav-bottom {
+    height: .7rem;
+    margin-top: 20px;
+}
+
+.home-nav {
+    height: .5rem;
+    background: rgba(255, 255, 255, .4);
+    border-radius: .35rem;
+    padding: .1rem .35rem;
+    position: relative;
+}
+
+.search-ipt {
+    float: left;
+    width: calc(100% - 29px);
+    height: .5rem;
+    line-height: .5rem
+}
+
+.search-ipt>input {
+    width: 100%;
+    height: .5rem;
+    background: transparent;
+}
+
+.search-icon {
+    float: right;
+    width: 20px;
+    height: 20px;
+    background: url(../images/search.png) no-repeat center center;
+    background-size: cover;
+}
+
+.home-list {
+    /* margin-top: .7rem */
+}
+
+.music-list {
+    border-bottom: 10px solid #f2f2f2
+}
+
+.list-icon1 {
+    background: url(../images/wodebendiyinle.png) no-repeat center center;
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+}
+
+.list-icon2 {
+    background: url(../images/wodeshoucang.png) no-repeat center center;
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+}
+
+.list-icon3 {
+    background: url(../images/down.png) no-repeat center center;
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+}
+
+.list-icon4 {
+    background: url(../images/zuijinbofang.png) no-repeat center center;
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+}
+
+.music-list>ul>li {
+    float: left;
+    width: 25%;
+    text-align: center;
+    color: #000;
+    /* background: red; */
+    padding: .2rem 0;
+}
+
+.music-list>ul>li>div {
+    margin-bottom: 7px;
+}
+
+.music-list>ul>li>div:last-child {
+    margin-bottom: 0
+}
+
+.group>div {
+    border: 1px solid #ddd;
+    height: 50px;
+    line-height: 50px;
+    color: #000;
+    padding-left: 15px;
+    font-size: 18px;
+}
+
+.Account {
+    height: 1.6rem;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+}
+
+.Account>div {
+    float: left;
+}
+
+.Account>.acc-img {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background: url(../images/headimg.jpg) no-repeat center center;
+    background-size: cover;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 15px;
+}
+
+.Account>.Account-msg {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #000;
+    left: 1.4rem;
+}
+
+.Account>.email {
+    float: right;
+    width: .6rem;
+    height: .6rem;
+    background: url(../images/email.png) no-repeat center center;
+    background-size: cover;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 5px;
+}
+
+.msg-bottom {
+    overflow: hidden;
+    font-size: .30rem;
+    line-height: .38rem;
+}
+
+.msg-bottom>div {
+    float: left;
+}
+
+.openVip {
+    width: 1.4rem;
+    height: .38rem;
+    border-radius: .19rem;
+    border: 1px solid #F87B00;
+    text-align: center;
+    line-height: .38rem;
+    color: #F87B00;
+    font-size: 14px;
+}
+
+.msg-top {
+    overflow: hidden;
+    margin-bottom: 6px;
+}
+
+.msg-top>div {
+    float: left;
+}
+
+.name {
+    line-height: .38rem;
+    margin-right: 7px;
+    font-size: 20px;
+}
+
+.Identity {
+    background: #1497DC;
+    border-radius: 12px;
+    color: #fff;
+    padding: 0 5px;
+}
+
+.listenTime {
+    margin-right: 10px;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.level {
+    color: #F87B00;
+    border: 1px solid;
+    border-radius: 5px;
+    line-height: 0.4rem;
+    padding: 0 3px;
+    margin-right: 6px;
+}
+
+.creatList {
+    height: 50px;
+    /* background: red; */
+    line-height: 50px;
+    padding: 0 15px;
+    color: #000;
+    position: relative;
+}
+
+.creatList-lf {
+    position: relative;
+    width: 2rem;
+    float: left;
+}
+
+.creatList-lf>div {
+    float: left;
+}
+
+.myself {
+    line-height: 50px;
+    font-size: 18px
+}
+
+.top-logo {
+    width: 24px;
+    height: 24px;
+    background: url(../images/totop.png) no-repeat center center;
+    background-size: cover;
+    right: 0;
+}
+
+.creatList-lr {
+    width: 3.6rem;
+    /* background: red */
+}
+
+.creatList-lr>div {
+    width: 25%;
+    float: left;
+}
+
+.creatList-lr>div>div {
+    margin: auto;
+}
+
+.plane-logo {
+    width: 24px;
+    height: 24px;
+    background: url(../images/plane.png) no-repeat center center;
+    background-size: cover;
+}
+
+.share-logo {
+    width: 24px;
+    height: 24px;
+    background: url(../images/share.png) no-repeat center center;
+    background-size: cover;
+}
+
+.add-logo {
+    width: 24px;
+    height: 24px;
+    background: url(../images/add.png) no-repeat center center;
+    background-size: cover;
+}
+
+.menu-logo {
+    width: 24px;
+    height: 24px;
+    background: url(../images/menu.png) no-repeat center center;
+    background-size: cover;
+}
+
+.song-lists>div {
+    height: 1.6rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.mylove {
+    position: relative;
+}
+
+.mylove>div {
+    float: left;
+}
+
+.love-img {
+    width: 38px;
+    height: 32px;
+    background: url(../images/no-love.png) no-repeat center center;
+    background-size: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.person-box {
+    width: 1.4rem;
+    height: 1.4rem;
+    background: #FF928F;
+    /* left: 5px; */
+    border-radius: 5px;
+    margin: .1rem 0;
+    position: relative;
+}
+
+.person-text {
+    height: 1.2rem;
+    margin-top: .1rem;
+    /* background: red; */
+    color: #000;
+    /* padding: .1rem .4rem; */
+    font-size: .36rem;
+    margin: .2rem .4rem;
+}
+
+.person-title {
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+/* .love-count {
+    color: #858585;
+} */
+
+.love-menu {
+    width: 24px;
+    height: 24px;
+    background: url(../images/threepoint.png) no-repeat center center;
+    background-size: cover;
+    /* float: right !important; */
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+}
+
+.bg-bottom {
+    /* display: none; */
+    border-top: 2px solid #F1F1EF;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 1.4rem;
+    background: #fff;
+    z-index: 1314;
+}
+
+.bg-bottom>div {
+    float: left;
+}
+
+.song-lists {
+    padding: 0 12px;
+}
+
+.song-img {
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 50%;
+    position: relative;
+    top: -15px;
+    margin-left: 15px;
+    border-radius: 50%;
+    border: .1rem solid #ddd;
+    background: #f2f2f2;
+}
+
+.song-msg {
+    width: calc(100% - 1.4rem - 35px);
+    /* background: red; */
+    /* height: 5px; */
+    /* top: 10px; */
+    margin-top: 10px;
+    padding: 0 10px;
+}
+
+.song-progress {
+    background: #ddd;
+    height: 3px;
+    position: relative;
+    width: 100%;
+}
+
+.song-progress-active {
+    /* width: 50px; */
+    background: blue;
+    height: 3px;
+    width: 0;
+}
+
+.song-mask {
+    position: absolute;
+    left: 0;
+    /* background: red; */
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    top: -4.5px;
+    border: 2px solid blue;
+}
+
+.song-mask-white {
+    width: 6px;
+    height: 6px;
+    background: #fff;
+    border-radius: 50%;
+    border: 1px solid #fff;
+}
+
+.song-Author {
+    /* color: #000; */
+    margin-top: 5px;
+    padding-left: 10px;
+    max-width: 2.4rem;
+}
+
+.song-name {
+    color: #000;
+    font-size: .40rem;
+    line-height: .46rem;
+    font-weight: 600;
+}
+
+.singer-name {
+    color: #585858;
+}
+
+.song-play {
+    width: .5rem;
+    height: .5rem;
+    background: url(../images/song-play.png) no-repeat center center;
+    background-size: cover;
+    /* float: right !important; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* right: 15px; */
+    transform: translate(-50%, -50%);
+}
+
+.next-song {
+    width: .7rem;
+    background: url(../images/next-song.png) no-repeat center center;
+    background-size: cover;
+    /* float: right !important; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* right: 15px; */
+    transform: translate(-50%, -50%);
+    height: .7rem;
+}
+
+.song-menu {
+    width: .4rem;
+    height: .4rem;
+    background: url(../images/song-menu.png) no-repeat center center;
+    background-size: cover;
+    /* float: right !important; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* right: 15px; */
+    transform: translate(-50%, -50%);
+}
+
+.song-operation {
+    height: calc(1rem - 5px);
+    /* background: red; */
+    overflow: hidden;
+    width: 2.7rem;
+    margin-top: 5px;
+}
+
+.song-operation>div {
+    width: 33.33%;
+    float: left;
+    position: relative;
+    height: 1rem;
+}
+
+.before-circle, .after-circle {
+    width: .8rem;
+    height: .8rem;
+    background: #22A5F1;
+    border-radius: 50%;
+    z-index: -5;
+    margin: .1rem;
+    /* margin-left: .1rem; */
+    margin: .1rem auto;
+}
+
+.liActive {
+    color: #F87B00;
+}
+.Lyrics ul{
+
+   width: 100%;
+    position: absolute;
+    top: 150px;
+}
+
+.Lyrics li {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    /* max-width: 200px; */
+    text-align: center;
+    margin-bottom: .3rem;
+    font-size: .36rem;
+    height: .5rem;
+    padding: 0 .2rem;
+}
+
+.song-img{
+    animation:z 6s linear 0s infinite paused
+    
+}
+
+@keyframes z{
+    0%{
+        transform:rotateZ(0deg)
+    }
+    100%{
+        transform:rotateZ(360deg)
+    }
+
+}

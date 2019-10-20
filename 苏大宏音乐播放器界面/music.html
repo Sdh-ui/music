@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>music</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/music.css">
+    <link rel="stylesheet" href="./css/local.css">
+
+</head>
+
+<body>
+
+    <audio id="audio" preload ></audio>
+
+
+    <div class="music-box">
+
+
+        <div class="nav">
+            <div class="return"></div>
+            <div class="songName"><div class=""></div></div>
+            <div class="share"></div>
+
+        </div>
+
+        <div class="songPtc"></div>
+
+        <div class="Lyrics" data-state="0">
+
+
+                <ul>
+                  
+                </ul>
+        </div>
+        <div class="operate-menu clearfix">
+            <!-- <div class="ope-love"></div>
+            <div class="ope-video"></div>
+            <div class="ope-download"></div>
+            <div class="ope-communicate"></div>
+            <div class="ope-menu"></div> -->
+            <div>
+                <div class="ope-love"></div>
+            </div>
+            <div>
+                <div class="ope-video"></div>
+            </div>
+            <div>
+                <div class="ope-download"></div>
+            </div>
+            <div>
+                <div class="ope-communicate"></div>
+            </div>
+            <div>
+                <div class="ope-menu"></div>
+            </div>
+        </div>
+        <div class="tables">
+            <div class="rate">
+                <div class="currentTime">00:00</div>
+                <div class="progress">
+                    <div class="progress-active"></div>
+                    <div class="mask">
+                        <div class="mask-white"></div>
+                    </div>
+                    <div class="layer"></div>
+                </div>
+                <div class="duration">00:00</div>
+            </div>
+
+
+            <div class="foot">
+                    <div class="menu" data-value="1"></div>
+              
+
+               
+                <div>
+                    <div class="before-circle"></div>
+                    <div class="before"></div>
+                </div>
+                <div class="btn">
+                    <div class="circle"></div>
+                    <div class="startTOP" data-value="0"></div>
+                </div>
+                <!-- <div class="after">
+                    <div class="before-circle"></div>
+                    <div class="after"></div>
+                </div> -->
+                <div>
+                    <div class="after-circle"></div>
+                    <div class="after"></div>
+                </div> 
+                <div class="love"> </div>
+
+            </div>
+
+
+
+
+
+        </div>
+    </div>
+
+    <div class="home">
+
+        <div class="bg-top">
+            <div class="nav-top clearfix">
+                <div class="nav-menu"></div>
+                <div class="nav-list">
+                    <div class="active">我</div>
+                    <div>听</div>
+                    <div>看</div>
+                    <div>唱</div>
+                </div>
+                <div class="nav-add"></div>
+            </div>
+            <div class="nav-bottom">
+                <div class="home-nav">
+                    <div class="search-ipt"><input type="text"></div>
+                    <div class="search-icon mid"></div>
+                </div>
+
+
+
+            </div>
+        </div>
+        <div class="bg-content">
+            <div class="Account">
+                <div class="acc-img"></div>
+                <div class="Account-msg">
+                    <div class="msg-top">
+                        <div class="name">宏</div>
+                        <div class="openVip">开通会员</div>
+                    </div>
+                    <div class="msg-bottom">
+                        <div class="level">LV5</div>
+                        <div class="listenTime">听歌16317分钟</div>
+                        <div class="Identity">身份认证</div>
+                    </div>
+                </div>
+                <div class="email"></div>
+            </div>
+            <div class="music-list">
+                <ul class="clearfix">
+                    <li class="local-li">
+                        <div class="list-icon1"></div>
+                        <div class="list-local">本地音乐</div>
+                        <div class="listLocal-count">0</div>
+                    </li>
+                    <li class="love-li">
+                        <div class="list-icon2"></div>
+                        <div class="list-love">我的收藏</div>
+                        <div class="listlove-count">0</div>
+                    </li>
+                    <li class="down-li">
+                        <div class="list-icon3"></div>
+                        <div class="list-down">下载</div>
+                        <div class="down-count">0</div>
+                    </li>
+                    <li class="recent-li">
+                        <div class="list-icon4"></div>
+                        <div class="list-recent">最近播放</div>
+                        <div class="listrecent-count">0</div>
+                    </li>
+                </ul>
+            </div>
+            <div class="group">
+                <div class="music-circle">音乐圈</div>
+                <div class="anchor-circle">主播圈</div>
+                <div class="pk-circle">k歌圈</div>
+
+            </div>
+
+            <div class="creatList">
+                <div class="creatList-lf clearfix fl">
+                    <div class="myself">自建歌单</div>
+                    <div class="top-logo mid"></div>
+                </div>
+                <div class="creatList-lr fr mid">
+                    <div>
+                        <div class="plane-logo"></div>
+                    </div>
+                    <div>
+                        <div class="share-logo"></div>
+                    </div>
+                    <div>
+                        <div class="add-logo"></div>
+                    </div>
+                    <div>
+                        <div class="menu-logo"></div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="song-lists">
+                <div class="mylove">
+                    <div class="person-box">
+                        <div class="love-img">
+                        </div>
+                    </div>
+                    <div class="person-text">
+                        <div class="person-title">我喜欢</div>
+                        <div class="box-count clearfix">
+                            <div class="fl">173首</div>
+                            <div class="fl">34首已下载</div>
+                        </div>
+                    </div>
+                    <div class="love-menu"></div>
+                </div>
+                <div class="mylove">
+                    <div class="person-box">
+                        <div class="love-img">
+                        </div>
+                    </div>
+                    <div class="person-text">
+                        <div class="person-title">我喜欢</div>
+                        <div class="box-count clearfix">
+                            <div class="fl">173首</div>
+                            <div class="fl">34首已下载</div>
+                        </div>
+                    </div>
+                    <div class="love-menu"></div>
+                </div>
+                <div class="mylove">
+                    <div class="person-box">
+                        <div class="love-img">
+                        </div>
+                    </div>
+                    <div class="person-text">
+                        <div class="person-title">我喜欢</div>
+                        <div class="box-count clearfix">
+                            <div class="fl">173首</div>
+                            <div class="fl">34首已下载</div>
+                        </div>
+                    </div>
+                    <div class="love-menu"></div>
+                </div>
+                <div class="mylove">
+                    <div class="person-box">
+                        <div class="love-img">
+                        </div>
+                    </div>
+                    <div class="person-text">
+                        <div class="person-title">我喜欢</div>
+                        <div class="box-count clearfix">
+                            <div class="fl">173首</div>
+                            <div class="fl">34首已下载</div>
+                        </div>
+                    </div>
+                    <div class="love-menu"></div>
+                </div>
+            </div>
+
+
+        </div>
+
+       
+
+
+    </div>
+    <div class="bg-bottom">
+        <div class="song-img"></div>
+        <div class="song-msg">
+            <div class="song-progress">
+                <div class="song-progress-active"></div>
+                <div class="song-mask">
+                    <div class="song-mask-white"></div>
+                </div>
+                <div class="song-layer"></div>
+            </div>
+            <div class="song-detailed clearfix">
+                <div class="song-Author fl">
+                    <div class="song-name one-text"></div>
+                    <div class="singer-name one-text"></div>
+                </div>
+                <div class="fr song-operation">
+                    <div>
+                        <div class="song-play" data-value="0"></div>
+
+                    </div>
+                    <div>
+                        <div class="next-song"></div>
+
+                    </div>
+                    <div>
+                        <div class="song-menu"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <!-- 本地音乐 -->
+
+    <!-- <div class="local-box">
+        <div class="local-nav">
+            <div class="local-return"></div>
+            <div class="local-title">本地音乐</div>
+        </div>
+        <div class="local-list">
+            <ul>            
+            </ul>
+
+            <div class="local-bottom">
+                共<span class="local-count">200</span>首歌
+            </div>
+        </div>
+    </div> -->
+    <div class="local-box">
+        <div class="local-nav">
+            <div class="local-return"></div>
+            <div class="local-title">本地音乐</div>
+        </div>
+        <div class="local-list" data-value='0'>
+            <ul>            
+            </ul>
+
+            <div class="local-bottom">
+                共<span class="local-count">0</span>首歌
+            </div>
+        </div>
+    </div>
+    <div class="love-box">
+        <div class="love-nav">
+            <div class="love-return"></div>
+            <div class="love-title">本地音乐</div>
+        </div>
+        <div class="love-list" data-value=0>
+            <ul>            
+            </ul>
+
+            <div class="love-bottom">
+                共<span class="love-count">0</span>首歌
+            </div>
+        </div>
+    </div>
+    <div class="recent-box">
+        <div class="recent-nav">
+            <div class="recent-return"></div>
+            <div class="recent-title">本地音乐</div>
+        </div>
+        <div class="recent-list" data-value=0>
+            <ul>            
+            </ul>
+
+            <div class="recent-bottom">
+                共<span class="recent-count">0</span>首歌
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/rem.js"></script>
+    <script src="./js/music.js"></script>
+
+
+
+
+</body>
+
+</html>

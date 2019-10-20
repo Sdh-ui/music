@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    font-size: .32rem;
+    color: white;
+}
+
+html, body {
+    height: 100%;
+}
+
+input {
+    border: 0;
+    outline: 0;
+    display: block;
+    padding: 0;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right !important;
+}
+
+.clearfix {
+    overflow: hidden;
+}
+
+.mid {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+}
+
+.auto-img {
+    width: 100%;
+    display: block;
+}
+
+.one-text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
